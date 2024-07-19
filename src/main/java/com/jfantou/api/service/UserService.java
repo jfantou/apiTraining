@@ -13,12 +13,6 @@ public class UserService {
 
     private static int usersCount = 0;
 
-    static {
-        users.add(new User(usersCount++, "jerome", LocalDate.now().minusYears(10)));
-        users.add(new User(usersCount++, "test", LocalDate.now().minusYears(5)));
-        users.add(new User(usersCount++, "fanny", LocalDate.now().minusYears(1)));
-    }
-
     public List<User> findAll(){
         return users;
     }
